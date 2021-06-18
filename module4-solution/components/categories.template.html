@@ -1,0 +1,8 @@
+<h4>Categories</h4>
+<ul>
+   <li ng-repeat="item in $ctrl.items">
+     <button ui-sref="categories.items({ categoryShortName: item.short_name })" class="btn btn-primary btn-xs">
+     {{ item.name }} ( {{ item.short_name }} )
+     </button>
+   </li>
+ </ul>

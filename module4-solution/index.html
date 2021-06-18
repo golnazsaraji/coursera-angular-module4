@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu App</title>
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-md-12">
+        <h1>Menu App</h1>
+      </div>
+    </header>
+
+    <!-- *** START: Row with content *********************************************** -->
+    <div class="row">
+      <!-- View should contain the columns -->
+      <ui-view></ui-view>
+    </div>
+    <!-- *** END: Row with content *********************************************** -->
+
+    <div class="row" style="margin-top: 300px;">
+      <div class="col-md-12">
+      </div>
+    </div>
+
+    <footer class="row">
+      <div class="col-md-12">
+
+      </div>
+    </footer>
+  </div>
+
+<script type="text/javascript" src="">
+
+</script>
+  <script src="angular.min.js"></script>
+  <script src="angular-ui-router.min.js"></script>
+  <!-- Load bootstrapping module and routes -->
+  <script src="home/menuapp.module.js"></script>
+  <script src="routes.js"></script>
+
+  <!-- Load other modules -->
+  <script src="data/data.module.js"></script>
+  <script src="data/menudata.service.js"></script>
+
+  <!-- Load rest of files -->
+  <script src="categories/categories-list.controller.js"></script>
+  <script src="categories/items-list.controller.js"></script>
+
+  <!-- Load components -->
+  <script src="components/categories.component.js"></script>
+  <script src="components/items.component.js"></script>
+</body>
+</html>
